@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Sudoku</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2e7d32">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>SUDOKU</h1>
+      <div id="top-controls">
+        <select id="mode-select">
+          <option value="easy">Fácil</option>
+          <option value="medium" selected>Medio</option>
+          <option value="hard">Difícil</option>
+          <option value="expert">Experto</option>
+        </select>
+        <button id="new-game-btn">Nuevo</button>
+      </div>
+    </header>
+
+    <div id="status-bar">
+      <div id="lives">❤️❤️❤️</div>
+      <div id="timer">00:00</div>
+      <div id="hints">💡 <span id="hint-count">3</span></div>
+    </div>
+
+    <div id="board-container">
+      <table id="board"></table>
+    </div>
+
+    <div id="num-pad"></div>
+
+    <div id="action-bar">
+      <button id="hint-btn" class="action-btn">💡 Pista</button>
+      <button id="erase-btn" class="action-btn">⌫ Borrar</button>
+      <button id="pause-btn" class="action-btn">⏸ Pausa</button>
+    </div>
+
+    <div id="overlay" class="hidden">
+      <div id="modal">
+        <h2 id="modal-title"></h2>
+        <p id="modal-msg"></p>
+        <button id="modal-btn">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>navigator.serviceWorker?.register('sw.js');</script>
+</body>
+</html>

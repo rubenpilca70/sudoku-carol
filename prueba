@@ -1,0 +1,11 @@
+vamos a realizar un soduku en html js css vamos a tener sql lite
+para el tema que es de la puntuacion en local quiero hacer como
+una app movil quiero que cuando seleccione un celda me de coloree las demas 
+celdas, tambien quiero un foco como para ayudas, quiero que haya modos,
+tambien quiero que haya vidas, cada que se falle, ademas quiero un menu donde 
+seleccione los numeros y de acuerdo a eso se va poniendo en cada celda
+
+quiero un disenio que tenga ui/ux compacto y solido que sea funcional 
+
+
+python3 -m http.server 8080
